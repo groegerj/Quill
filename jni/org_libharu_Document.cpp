@@ -2,6 +2,7 @@
 #include "org_libharu_HPDF.h"
 #include "haru_error_handler.h"
 #include <assert.h>
+#include <string.h>
 
 jfieldID Document_HPDF_Doc_Pointer_ID;
 

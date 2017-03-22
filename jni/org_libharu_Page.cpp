@@ -4,6 +4,7 @@
 #include "hpdf.h"
 #include "haru_error_handler.h"
 #include <assert.h>
+#include <string.h>
 #include <android/log.h>  
 
 #define DEBUG_TAG "libharu.Page"  
