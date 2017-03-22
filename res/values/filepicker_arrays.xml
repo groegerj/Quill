@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="filepicker_sorting">
+		<item>None</item>
+		<item>Alphabetical</item>
+		<item>By Type</item>
+		<item>By Size</item>
+	</string-array>
+	<string-array name="filepicker_sorting_value">
+		<item>none</item>
+		<item>alpha</item>
+		<item>type</item>
+		<item>size</item>
+	</string-array>
+</resources>

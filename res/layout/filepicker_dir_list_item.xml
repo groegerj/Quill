@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="@dimen/filepicker_grid_column_width"
+	android:layout_height="wrap_content"
+	android:gravity="center_horizontal"
+	android:clickable="false"
+	android:padding="2dp">
+	<ImageView
+		android:id="@+id/filepicker_grid_icon"
+		android:maxWidth="@dimen/filepicker_grid_column_width"
+		android:layout_height="wrap_content"
+		android:paddingTop="15dp"
+		android:clickable="false"
+		android:layout_width="wrap_content"/>
+	<TextView
+		android:id="@+id/filepicker_grid_title"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textColor="@color/filepicker_black"
+		android:maxLines="1"
+		android:singleLine="true"
+		android:ellipsize="middle"
+		android:clickable="false"/>
+</LinearLayout>

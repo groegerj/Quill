@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="filepicker_grid_column_width">128dp</dimen>
+    <dimen name="filepicker_grid_row_height">128dp</dimen>
+    <dimen name="filepicker_shortcut_height">56dp</dimen>
+    
+</resources>

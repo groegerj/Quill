@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<resources>
+	<color name="filepicker_white">#FFFFFF</color>
+	<color name="filepicker_black">#000000</color>
+	<color name="filepicker_gray">#464646</color>
+	<color name="lfilepicker_ightgray">#767676</color>
+	<color name="filepicker_whitegray">#969696</color>
+	<color name="filepicker_offWhite">#DDDDDD</color>
+	<color name="filepicker_darkGray">#333333</color>
+	<color name="filepicker_blue">#ff0091dc</color>	
+</resources>

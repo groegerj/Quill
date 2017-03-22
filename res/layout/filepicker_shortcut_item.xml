@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/filepicker_shortcut_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/filepicker_shortcut_height"
+        android:gravity="center_vertical"
+        android:paddingRight="8dp"
+        android:src="@drawable/filepicker_shortcut_folder" />
+
+    <TextView
+        android:id="@+id/filepicker_shortcut_title"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/filepicker_shortcut_height"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:text="@string/bookshelf_item_large_text"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/filepicker_black" />
+
+    <ImageView
+        android:id="@+id/filepicker_shortcut_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/filepicker_shortcut_height"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/filepicker_indicator" />
+
+
+</LinearLayout>

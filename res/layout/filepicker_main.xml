@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:id="@+id/main_linear_layout"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:layout_alignParentRight="true"
+     android:layout_alignParentTop="true">
+
+     <LinearLayout 
+        android:id="@+id/filepicker_main_vertical_left"
+        android:orientation="vertical"
+        android:layout_weight="0.3"
+        android:layout_width="0dp"
+	    android:paddingLeft="5dp"
+	    android:paddingTop="5dp"
+	    android:paddingBottom="5dp"
+        android:background="@drawable/filepicker_dir_list_gradient"
+        android:layout_height="match_parent">
+    	<SearchView
+    	    android:visibility="gone"
+            android:id="@+id/filepicker_search"
+            android:layout_width="match_parent"
+            android:layout_height="48dp" >
+        </SearchView>
+
+    	<ListView
+    	    android:id="@+id/filepicker_dir_shortcut_list"
+    	    android:layout_width="match_parent"
+    	    android:layout_height="wrap_content" >
+    	</ListView>
+
+	</LinearLayout>
+	
+    
+    <LinearLayout 
+        android:id="@+id/filepicker_main_vertical_right"
+        android:orientation="vertical"
+        android:layout_weight="0.7"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+
+        
+        <TextView
+       		android:id="@+id/filepicker_dir_name_display"
+	        android:layout_width="match_parent"
+    	    android:layout_height="wrap_content"
+    	    android:gravity="left"
+    	    android:paddingLeft="10dp"
+    	    android:paddingBottom="10dp"
+        	android:textAppearance="?android:attr/textAppearanceLarge"/>
+        
+        <ScrollView
+            android:visibility="gone"
+            android:id="@+id/filepicker_dir_breadcrumbs"
+            android:layout_width="match_parent"
+            android:layout_height="48dp" >
+        </ScrollView>
+
+        <GridView
+            android:id="@+id/filepicker_file_grid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/filepicker_white"
+            android:columnWidth = "@dimen/filepicker_grid_column_width"
+            android:stretchMode="columnWidth"
+            android:horizontalSpacing="5dp"
+            android:numColumns="auto_fit" >
+        </GridView>
+        
+    </LinearLayout>
+    
+
+</LinearLayout>
