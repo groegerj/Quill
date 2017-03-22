@@ -27,7 +27,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_alignParentLeft="true"
-            android:text="Save" />
+            android:text="@string/image_editor_save" />
 
         <Button
             android:id="@+id/image_editor_erase"
@@ -35,7 +35,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_alignParentRight="true"
-            android:text="Erase" />
+            android:text="@string/image_editor_erase_erase" />
 
         <ImageButton
             android:id="@+id/image_editor_rotate_left"
@@ -44,7 +44,7 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
             android:src="@drawable/image_editor_rotate_left"
-            android:text="Rotate Left" />
+            android:text="@string/image_editor_rotate_left" />
 
         <ImageButton
             android:id="@+id/image_editor_rotate_right"
@@ -52,7 +52,7 @@
             android:layout_height="wrap_content"
             android:layout_toRightOf="@id/image_editor_rotate_left"
             android:src="@drawable/image_editor_rotate_right"
-            android:text="Rotate Right" />
+            android:text="@string/image_editor_rotate_right" />
 
         <CheckBox
             android:id="@+id/image_editor_check_crop"
@@ -60,7 +60,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:layout_alignParentTop="true"
-            android:text="Crop" />
+            android:text="@string/image_editor_crop" />
     </RelativeLayout>
 
     <TextView
@@ -68,7 +68,7 @@
         android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="No image selected"
+        android:text="@string/image_editor_no_image"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
 </FrameLayout>

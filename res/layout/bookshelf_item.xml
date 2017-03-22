@@ -20,14 +20,14 @@
             android:id="@+id/bookshelf_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Large Text"
+            android:text="@string/bookshelf_item_large_text"
             android:textAppearance="?android:attr/textAppearanceLarge" />
 
         <TextView
             android:id="@+id/bookshelf_summary"
             android:layout_width="wrap_content"
             android:layout_height="fill_parent"
-            android:text="Small Text"
+            android:text="@string/bookshelf_item_small_text"
             android:textAppearance="?android:attr/textAppearanceSmall" />
     </LinearLayout>
 

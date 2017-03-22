@@ -12,7 +12,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:gravity="center_vertical"
-        android:text="Synchronizing"
+        android:text="@string/sync_status_sync"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <ProgressBar
@@ -31,7 +31,7 @@
         android:layout_below="@+id/sync_status_big"
         android:layout_marginTop="10dp"
         android:gravity="center_horizontal"
-        android:text="Contacting server" />
+        android:text="@string/sync_status_contacting" />
 
     <TextView
         android:id="@+id/sync_account_label"
@@ -40,7 +40,7 @@
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/sync_status"
         android:layout_marginTop="25dp"
-        android:text="Account"
+        android:text="@string/sync_status_account"
         android:textAppearance="?android:attr/textAppearanceSmall" />
 
     <TextView
@@ -67,7 +67,7 @@
         android:layout_above="@+id/sync_email_label"
         android:layout_marginLeft="5dp"
         android:layout_toRightOf="@+id/sync_name_label"
-        android:text="Firstname Lastname" />
+        android:text="@string/sync_status_name" />
 
     <TextView
         android:id="@+id/sync_email"
@@ -76,6 +76,6 @@
         android:layout_alignBaseline="@+id/sync_email_label"
         android:layout_alignBottom="@+id/sync_email_label"
         android:layout_alignLeft="@+id/sync_name"
-        android:text="my.account@gmail.com" />
+        android:text="@string/sync_status_email" />
 
 </RelativeLayout>

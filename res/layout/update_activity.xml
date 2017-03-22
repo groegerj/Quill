@@ -12,7 +12,7 @@
         android:layout_alignParentTop="true"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
-        android:text="Backup directory path:" />
+        android:text="@string/update_path" />
 
     <TextView
         android:id="@+id/update_path"
@@ -21,7 +21,7 @@
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/update_path_label"
         android:layout_marginLeft="36dp"
-        android:text="Medium Text"
+        android:text="@string/update_medium"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <TextView
@@ -32,7 +32,7 @@
         android:layout_below="@+id/update_path"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="22dp"
-        android:text="Required space:" />
+        android:text="@string/update_space" />
 
     <TextView
         android:id="@+id/update_available"
@@ -42,7 +42,7 @@
         android:layout_below="@+id/update_space"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="5dp"
-        android:text="Available space:" />
+        android:text="@string/update_available" />
 
     <Button
         android:id="@+id/update_button_ok"
@@ -51,7 +51,7 @@
         android:layout_alignParentRight="true"
         android:layout_below="@+id/update_space"
         android:layout_marginTop="20dp"
-        android:text="OK" />
+        android:text="@string/update_ok" />
 
     <Button
         android:id="@+id/update_button_change"
@@ -61,7 +61,7 @@
         android:layout_alignBottom="@+id/update_button_ok"
         android:layout_marginRight="15dp"
         android:layout_toLeftOf="@+id/update_button_ok"
-        android:text="Change Directory" />
+        android:text="@string/update_change" />
 
     <ProgressBar
         android:id="@+id/update_progress"
