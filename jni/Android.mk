@@ -1,6 +1,6 @@
 LOCAL_PATH:= $(call my-dir)
 
-#include $(CLEAR_VARS)
+include $(CLEAR_VARS)
 
 libharu := libhpdf-2.3.0RC2
 
@@ -75,6 +75,6 @@ LOCAL_MODULE    := hpdf
 LOCAL_MODULE_FILENAME    := libhpdf
 LOCAL_SRC_FILES := $(libharu_sources:%=$(libharu)/src/%) $(jni_sources)
 
-LOCAL_STATIC_LIBRARIES := z
+LOCAL_SHARED_LIBRARIES := libcutils libz
 
 include $(BUILD_SHARED_LIBRARY)
