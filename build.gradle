@@ -1,0 +1,62 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+task wrapper (type:Wrapper) {
+    gradleVersion = '2.2.1'
+    distributionUrl = 'https://services.gradle.org/distributions/gradle-2.2.1-all.zip'
+}
+
+buildscript {
+    repositories {
+        jcenter()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:1.0.0'
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+    }
+}
+
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion "25.0.2"
+
+    defaultConfig {
+        applicationId "com.write.Quill"
+        minSdkVersion 14
+        targetSdkVersion 22
+
+        ndk {
+            moduleName "hpdf"
+            abiFilters 'armeabi', 'mips', 'x86'
+            ldLibs "z", "m", "log"
+            cFlags = "-DLIBHPDF_HAVE_NOPNGLIB -I" + file("jni/libhpdf-2.3.0RC2/include").absolutePath
+       }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+
+    lintOptions {
+      abortOnError false
+      disable "Instantiatable"
+    }
+
+    sourceSets.main {
+      manifest.srcFile 'AndroidManifest.xml'
+      java.srcDirs = ['src']
+      res.srcDirs = ['res']
+      jni.srcDirs = ['jni']
+      assets.srcDirs = ['assets']
+    }
+}
+
