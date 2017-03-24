@@ -18,6 +18,8 @@ which I am going to remove as this fork is a better way to achieve the same goal
 
 Compiling has been tested along with the source code tree of Cyanogenmod 13 as well as LineageOS 14.1.
 
+Gradle build files have been added to allow for compiling Quill also the "standard way".
+
 more to come
 
 ## Dependencies
